@@ -1,40 +1,114 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
+# My ProDev Frontend Journey – React Genesis
 
-First, run the development server:
+I’m currently working on **React Genesis**, a project under **ProDev Frontend**, where I’m learning the essentials of setting up and building modern web applications using **React**, **TypeScript**, and **Next.js**.  
 
+This project takes inspiration from **Airbnb’s UI** — property listings, ratings, images, and interactive components — while teaching me how to apply **best practices in frontend development**.  
+
+---
+
+## What I’m Learning
+
+Through this project, I’m learning how to:
+
+- Scaffold a **Next.js project with TypeScript**
+- Understand the **Next.js folder structure**
+- Work with **file-based routing**
+- Create **reusable React components**
+- Use **TypeScript interfaces** for props
+- Manage assets and static files
+- Apply **responsive design** with Tailwind CSS
+- Set up **ESLint** for code quality
+- Build clean, modular, and maintainable frontend apps  
+
+---
+
+## My Setup
+
+- **Node.js** v16+  
+- **Next.js v13+**  
+- **TypeScript**  
+- **Tailwind CSS**  
+- **ESLint**  
+
+---
+
+## How I’m Structuring the Project
+
+- All components live in `components/`  
+- TypeScript interfaces are in `interfaces/`  
+- Pages are inside `pages/` as per Next.js conventions  
+- Tailwind is used for styling and responsiveness  
+- ESLint is keeping my code clean and consistent  
+
+---
+
+## My Progress (Tasks)
+
+### 0. Scaffolding
+I used this command to start my project:  
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npx create-next-app@latest alx-project-0x00 --typescript
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I chose **Yes** for ESLint, Tailwind, and import alias.  
+I chose **No** for `/src` and App Router (using Pages Router instead).  
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Then I ran it with:  
+```bash
+npm run dev -- -p 3000
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### 1. Setting Up Directories
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Created `components/` and `interfaces/` folders  
+* Added `Card.tsx` and `Pill.tsx` in `components/`  
+* Added `index.ts` in `interfaces/`  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Basic Routing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+* Added `pages/landing.tsx` and `pages/about.tsx`  
+* Both return simple components with headings  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### 3. Rendering Components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Moved images to `public/assets/images`  
+* Built a **Card** component and a **Pill** component  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+
+### 4. Using Components
+
+* Imported and rendered **Card** inside `landing.tsx`  
+
+---
+
+### 5. Typing Components
+
+* Defined `PillProps` in `interfaces/index.ts`  
+* Updated `Pill` to accept `title` as a prop  
+
+---
+
+### 6. Advanced Task (In Progress)
+
+* Creating a **Button** component with props for title, sizes, and shapes  
+
+---
+
+## Repo Info
+
+* **Repo:** `alx-project-0x00-setup`  
+* **Main folder:** `alx-project-0x00`  
+* **Key files so far:**  
+  * `components/Card.tsx`  
+  * `components/Pill.tsx`  
+  * `interfaces/index.ts`  
+  * `pages/landing.tsx`  
